@@ -1,24 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Typography from "@mui/material/Typography";
+import LoginForm from "./Components/Login/Login";
+import Leaderboard from "./Components/LeaderBoard/LeaderBoard";
+import { Container } from "@mui/system";
+import PlayerForm from "./Components/PlayerForm/PlayerForm";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <h1 style={{ textAlign: "center" }}>
+        SHOPOTH STANDUP CHICKEN BUCKET APP
+      </h1>
+      <LoginForm />
+      <PlayerForm />
+      {/* <Leaderboard /> */}
+    </Container>
   );
 }
 
